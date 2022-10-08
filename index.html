@@ -63,7 +63,9 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="modal-btn">Замовити послугу</button>
+        <button data-modal-open type="button" class="modal-btn">
+          Замовити послугу
+        </button>
       </section>
 
       <section class="features">
@@ -125,26 +127,35 @@
         <div class="container">
           <h2 class="work-title style-title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li class="item list">
+            <li class="work-item list">
               <img
                 src="./images/img.jpg"
                 alt="Людина набирає текст на клавіатурі"
                 width="370"
               />
+              <div class="activity-1">
+                <p class="activity-text">Десктопні додатки</p>
+              </div>
             </li>
-            <li class="item list">
+            <li class="work-item list">
               <img
                 src="./images/img1.jpg"
                 alt="Людина працює на ноутбуці"
                 width="370"
               />
+              <div class="activity-2">
+                <p class="activity-text">Мобільні додатки</p>
+              </div>
             </li>
-            <li class="item list">
+            <li class="work-item list">
               <img
                 src="./images/img2.jpg"
                 alt="Людина працює на планшеті з кольоровою палітрою"
                 width="370"
               />
+              <div class="activity-3">
+                <p class="activity-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -445,5 +456,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="btn-close">
+          <svg class="modal-close-icon" width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
